@@ -14,7 +14,7 @@
 #
 # !!! > You need to run BUSCO on each species before running this script
 #
-wd=/workdir # your working directory. If using docker, can be mounted as follow: docker run -v /yourfolder:/workdir ...
+#wd=/workdir your working directory. If using docker, can be mounted as follow: docker run -v /yourfolder:/workdir ...
 cd $wd
 mkdir extracted
 # Step 1) Extract BUSCO genes, produce one multispecies-fasta per BUSCO family
