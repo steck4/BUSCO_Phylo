@@ -6,7 +6,7 @@
 
 #This is IN PROGRESS an attempt to generate BUSCO sets for multiple assemblies for phylogenomic analyses
 
-home = /N/dc2/scratch/steckm/MbokWorms2018/annotation/assemblies
+home=PDWHERE
 
 cd $home
 
@@ -17,5 +17,5 @@ module load busco/3.0.2
 
 for f in *.fasta
   do 
-    run_BUSCO.py -i $f -o ${f}busco -l /N/soft/rhel7/busco/3.0.2/busco-lineage/eukaryota_odb9 -m tran
+    run_BUSCO.py -i $f -o ${f}_busco -l /N/soft/rhel7/busco/3.0.2/busco-lineage/eukaryota_odb9 -m tran
   done
