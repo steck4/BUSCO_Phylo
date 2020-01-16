@@ -1,4 +1,4 @@
-This is a modified set of scripts for the use of BUSCO in phylogenetics
+This is a modified set of scripts for the use of BUSCO in phylogenetics found here: https://gitlab.com/ezlab/busco_usecases/tree/master
 
 Additional scripts related to Benchmarking Universal Single-Copy Orthologs (BUSCO)
 
