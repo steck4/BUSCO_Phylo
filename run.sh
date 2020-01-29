@@ -15,6 +15,8 @@ module load busco
 # !!! You need to have run BUSCO on each species before running this script
 #
 wd=/WORKDIR #your working directory
+progs=/N/u/USER/Carbonate
+#
 cd $wd
 mkdir extracted
 # Step 1) Extract BUSCO genes, produce one multispecies-fasta per BUSCO family
@@ -26,8 +28,8 @@ echo "starting mafft trimAl"
 for b in $(ls $wd/extracted/*.faa)
 do
 echo $b
-mafft --thread -8 --auto $b > $b.aln
-trimal -in $b.aln -out $b.aln.trimmed -automated1
+$progs/mafft-7.453/core/mafft --thread -8 --auto $b > $b.aln
+$progs/trimal/source/trimal -in $b.aln -out $b.aln.trimmed -automated1
 done
 # Step 3) Produce the supermatrix
 python3 /$wd/BUSCO_Phylo/superalignment.py $wd/extracted/
