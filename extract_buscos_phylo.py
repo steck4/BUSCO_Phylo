@@ -22,8 +22,8 @@ import re
 # - augustus_output/extracted_proteins
 
 wd = '/WORKDIR/'  # !!! > place all BUSCO run folders here
-output = '/$wd/extracted/'  # !!! > output of this script will be here. Create the folder before running the script.
-genesets = '/$wd/proteins' # !!! > complete protein set for each species, in fasta, should be placed here
+output = '/WORKDIR/extracted/'  # !!! > output of this script will be here. Create the folder before running the script.
+#genesets = '/WORKDIR/proteins' # !!! > complete protein set for each species, in fasta, should be placed here
 
 if wd[-1] != '/':
     wd += '/'
