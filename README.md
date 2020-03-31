@@ -4,6 +4,10 @@ Additional scripts related to Benchmarking Universal Single-Copy Orthologs (BUSC
 
 For the tool itself: https://gitlab.com/ezlab/busco
 
+You must edit the directories in the following:
+run.sh
+runRAxML.sh - this one must be the folder immediately above wherever your extracted directory is!
+extract_buscos_phylo.py
 
 This folder contains scripts to extract BUSCO genes from several BUSCO run folders (! having used the same BUSCO dataset) and produce a species phylogeny.
 You will also find here a Dockerfile to build a container that contains BUSCO and other tools needed for this analysis.
